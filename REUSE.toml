@@ -1,5 +1,0 @@
-version = 1
-SPDX-PackageName = "licence-poc"
-SPDX-PackageSupplier = "Example Example <example.example@example.example>"
-SPDX-PackageDownloadLocation = "https://github.com/example/example"
-annotations = []
