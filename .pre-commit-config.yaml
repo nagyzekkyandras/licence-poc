@@ -1,0 +1,10 @@
+repos:
+  - repo: https://github.com/ansys/pre-commit-hooks
+    rev: v0.5.1
+    hooks:
+      - id: add-license-headers
+        name: Add license headers
+        args:
+          - --custom_template=apache.txt
+          - --parser=shell
+        files: '^(etc|liquibase)/.*\.(sh)$'
