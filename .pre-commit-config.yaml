@@ -1,0 +1,9 @@
+repos:
+  - repo: local
+    hooks:
+      - id: add-license-header
+        name: Add License Header
+        entry: ./scripts/add_license.sh
+        language: system
+        types: [file]
+        files: \.(sh|yaml|yml|xml|dtd)$
