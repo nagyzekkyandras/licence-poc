@@ -1,3 +1,9 @@
+<!--
+Copyright (C) 2025 Example
+
+SPDX-License-Identifier: Apache-2.0
+-->
+
 # Licence POC
 
 install pre-commit as dependency
