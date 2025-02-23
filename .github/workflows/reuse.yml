@@ -1,0 +1,25 @@
+# Copyright (C) 2025 Example
+#
+# SPDX-License-Identifier: Apache-2.0
+
+name: reuse
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  reuse:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - name: Install reuse
+        run: pipx install reuse
+      - name: Run pre-commit hooks
+        run: ./scripts/add_license.sh 
