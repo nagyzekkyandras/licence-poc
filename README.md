@@ -8,8 +8,7 @@ pip install reuse
 ```
 add licence to files
 ```sh
-reuse annotate --license="Apache-2.0" --copyright="Copyright (C) 2025 Example" ./src/*
-# or with script
+reuse annotate --license="Apache-2.0" --copyright="Copyright (C) 2025 Example" --template apache.jinja2 ./src/*
 ./scripts/add_license.sh
 ```
 
